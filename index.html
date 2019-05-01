@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js</title>
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		
+<div id="div1"></div>
+<div>
+<p id="p1">This is a paragraph.</p>
+<p id="p2">This is another paragraph.</p>
+</div>
+
+<script>
+var para = document.createElement("a");
+var node = document.createTextNode("This is new paragrap.");
+para.appendChild(node);
+para.setAttribute('href',"yourlink.htm");
+para.setAttribute('target',"_blank");
+
+
+var element = document.getElementById("div1");
+element.appendChild(para);
+</script>
+		
+	</div>
+
+
+</body>
+</html>
